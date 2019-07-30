@@ -16,6 +16,7 @@ namespace ContosoUniversity.Data
         public DbSet<Instructor> Instructors { get; set; }
         public DbSet<OfficeAssignment> OfficeAssignments { get; set; }
         public DbSet<CourseAssignment> CourseAssignments { get; set; }
+        /* Ed Ali - Add DBSet and modelBuilder.Entity for the newly created "Person" */
         public DbSet<Person> People { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
